@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         database = new Database(this,"ghichu.sqlite",null,1);
 
         // tao bang CongViec
-        //database.QueryData("CREATE TABLE IF NOT EXISTS CongViec(Id INTEGER PRIMARY KEY AUTOINCREMENT, TenCV VARCHAR(200))");
+        database.QueryData("CREATE TABLE IF NOT EXISTS CongViec(Id INTEGER PRIMARY KEY AUTOINCREMENT, TenCV VARCHAR(200))");
 
         // insert data
         //database.QueryData("INSERT INTO CongViec VALUES(null,'Làm bài tập android')");
